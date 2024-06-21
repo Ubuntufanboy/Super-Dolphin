@@ -42,12 +42,12 @@ def generate_video(background_video, image_elements, audio_file, output_file, te
     ffmpeg.run(stream)
 
 # Example usage
-background_video = 'ba.mp4'
+background_video = 'background.mp4'
 image_elements = [
-    {'file': 'weird.jpg', 'x': 50, 'y': 50, 'start_time': 0, 'end_time': 5},
-    {'file': 'unfunny.gif', 'x': 100, 'y': 100, 'start_time': 5, 'end_time': 30, 'width': 200, 'height': 200}
+    {'file': 'img.jpg', 'x': 50, 'y': 50, 'start_time': 0, 'end_time': 5},
+    {'file': 'animated.gif', 'x': 100, 'y': 100, 'start_time': 5, 'end_time': 30, 'width': 200, 'height': 200}
 ]
-audio_file = 'badapple.mp3'
+audio_file = 'audio.mp3'
 text_elements = [
     {'text': 'Hello, World!', 'x': 200, 'y': 150, 'start_time': 2, 'end_time': 8}
 ]
